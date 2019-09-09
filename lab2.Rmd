@@ -1,6 +1,7 @@
 ---
 title: "Lab 2"
 author: "Shawn Santo"
+edited by: "Lucie Elisabeth Jacobson" 
 date: "09/09/2019"
 output: 
   html_document:
@@ -49,6 +50,23 @@ print(str(senators[[2]][1]))
 #### Task 2
 
 Extract the birthday for each North Carolina senator.
+```{r}
+for(i in (1:length(senators[[2]]))) {
+  if(senators[[2]][[i]]["state"] == "NC"){
+    print(senators[[2]][[i]]["birthday"])
+  }
+}
+  
+  
+  #{
+    #print(senators[[2]][[i]]["birthday"])
+  #}
+  #i <- i + 1
+#}
+
+print(senators[[2]][[1]]["state"])
+
+```
 
 
 
